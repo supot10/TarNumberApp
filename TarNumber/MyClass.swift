@@ -13,6 +13,7 @@ class MyClass {
     let preUrlAddUser: String = "https://androidthai.in.th/tar/addUserTum.php?isAdd=true&Name="
     
     let columString = ["&User=","&Password="]
+    let preUrlGetJson = "https://androidthai.in.th/tar/getDataWhereUserTum.php?isAdd=true&User="
     
     func findUrlAddUser(myName: String, myUser: String, myPassword: String) -> String {
         let resultString: String = preUrlAddUser + myName + columString[0] + myUser + columString[1] + myPassword
