@@ -116,7 +116,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallpaper2" translatesAutoresizingMaskIntoConstraints="NO" id="YR2-l0-4Bb">
+                            <imageView userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallpaper2" translatesAutoresizingMaskIntoConstraints="NO" id="YR2-l0-4Bb">
                                 <rect key="frame" x="0.0" y="44" width="359" height="734"/>
                             </imageView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="24F-Jo-eAd">
@@ -127,10 +127,14 @@
                                     <navigationItem title="Title" id="SqY-S4-ftB">
                                         <barButtonItem key="leftBarButtonItem" title="Back" image="ArrowBack" id="v1D-HS-eJO">
                                             <connections>
-                                                <segue destination="BYZ-38-t0r" kind="show" id="zL8-Rz-iBJ"/>
+                                                <segue destination="BYZ-38-t0r" kind="show" identifier="BackMain" id="zL8-Rz-iBJ"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="Item" image="cloud_upload" id="B0J-XG-9T9"/>
+                                        <barButtonItem key="rightBarButtonItem" title="Item" image="cloud_upload" id="B0J-XG-9T9">
+                                            <connections>
+                                                <action selector="cloudUpload:" destination="BL5-Hy-2Tn" id="OIg-yE-SOB"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -183,6 +187,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yI7-Jg-uht"/>
                     </view>
+                    <connections>
+                        <outlet property="nameTextFiel" destination="1OX-g2-rAH" id="AQn-hu-Pzd"/>
+                        <outlet property="passwordTextFiel" destination="S3P-62-Of0" id="5Gf-Zf-ZBi"/>
+                        <outlet property="userText" destination="VGw-5d-BOQ" id="q5d-C9-YkF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="93v-dh-yAo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
