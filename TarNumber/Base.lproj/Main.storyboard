@@ -60,7 +60,7 @@
                                 <rect key="frame" x="56" y="460" width="127" height="33"/>
                                 <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="127" id="q5w-qp-Yll"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="127" id="q5w-qp-Yll"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <state key="normal" title="Sign In">
@@ -71,7 +71,7 @@
                                 <rect key="frame" x="189" y="460" width="127" height="33"/>
                                 <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="127" id="3K7-hB-4Xy"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="127" id="3K7-hB-4Xy"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <state key="normal" title="Sign Up">
@@ -130,22 +130,56 @@
                                                 <segue destination="BYZ-38-t0r" kind="show" id="zL8-Rz-iBJ"/>
                                             </connections>
                                         </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Item" image="cloud_upload" id="B0J-XG-9T9"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name :" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1OX-g2-rAH">
+                                <rect key="frame" x="73.666666666666686" y="127" width="228" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="228" id="yWZ-tC-wzU"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="name"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PassWord :" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S3P-62-Of0">
+                                <rect key="frame" x="73.666666666666686" y="211" width="228" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="228" id="Cg0-TF-pVK"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User :" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VGw-5d-BOQ">
+                                <rect key="frame" x="73.666666666666686" y="173" width="228" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="228" id="Vbb-3G-rsh"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="username"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="YR2-l0-4Bb" firstAttribute="leading" secondItem="yI7-Jg-uht" secondAttribute="leading" id="00J-x9-TSw"/>
                             <constraint firstItem="24F-Jo-eAd" firstAttribute="leading" secondItem="yI7-Jg-uht" secondAttribute="leading" id="0TW-zx-zum"/>
                             <constraint firstItem="yI7-Jg-uht" firstAttribute="trailing" secondItem="YR2-l0-4Bb" secondAttribute="trailing" constant="16" id="1Ss-cd-T8J"/>
+                            <constraint firstItem="1OX-g2-rAH" firstAttribute="centerX" secondItem="5VF-2x-sZs" secondAttribute="centerX" id="AAR-8k-9o1"/>
                             <constraint firstItem="24F-Jo-eAd" firstAttribute="top" secondItem="yI7-Jg-uht" secondAttribute="top" id="AtI-6a-P18"/>
+                            <constraint firstItem="S3P-62-Of0" firstAttribute="centerX" secondItem="5VF-2x-sZs" secondAttribute="centerX" id="BDo-FU-lk8"/>
                             <constraint firstItem="YR2-l0-4Bb" firstAttribute="top" secondItem="yI7-Jg-uht" secondAttribute="top" id="CTY-WG-S75"/>
                             <constraint firstItem="YR2-l0-4Bb" firstAttribute="top" secondItem="yI7-Jg-uht" secondAttribute="top" id="L1c-VT-Y5M"/>
                             <constraint firstItem="YR2-l0-4Bb" firstAttribute="leading" secondItem="yI7-Jg-uht" secondAttribute="leading" id="NC3-m5-Cab"/>
+                            <constraint firstItem="VGw-5d-BOQ" firstAttribute="centerX" secondItem="5VF-2x-sZs" secondAttribute="centerX" id="OEQ-EH-UOH"/>
                             <constraint firstItem="YR2-l0-4Bb" firstAttribute="bottom" secondItem="yI7-Jg-uht" secondAttribute="bottom" id="TRg-Ot-pZb"/>
                             <constraint firstItem="yI7-Jg-uht" firstAttribute="trailing" secondItem="YR2-l0-4Bb" secondAttribute="trailing" id="eQP-M3-xW0"/>
+                            <constraint firstItem="VGw-5d-BOQ" firstAttribute="top" secondItem="1OX-g2-rAH" secondAttribute="bottom" constant="16" id="iAk-9h-Tym"/>
                             <constraint firstItem="24F-Jo-eAd" firstAttribute="trailing" secondItem="yI7-Jg-uht" secondAttribute="trailing" id="ldn-ev-kze"/>
+                            <constraint firstItem="S3P-62-Of0" firstAttribute="top" secondItem="VGw-5d-BOQ" secondAttribute="bottom" constant="8" id="oYi-gA-P6m"/>
+                            <constraint firstItem="1OX-g2-rAH" firstAttribute="top" secondItem="24F-Jo-eAd" secondAttribute="bottom" constant="39" id="tFg-Ed-zkb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yI7-Jg-uht"/>
                     </view>
@@ -159,6 +193,7 @@
         <image name="ArrowBack" width="108" height="108"/>
         <image name="Logo" width="128" height="128"/>
         <image name="Wallpaper" width="4000" height="6000"/>
+        <image name="cloud_upload" width="36" height="36"/>
         <image name="wallpaper2" width="3600" height="2403"/>
     </resources>
 </document>
