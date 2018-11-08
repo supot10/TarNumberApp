@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0ED921612193EA65009F6CAB /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED921602193EA65009F6CAB /* RegisterViewController.swift */; };
 		C21802222192CD36008E0888 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21802212192CD36008E0888 /* AppDelegate.swift */; };
 		C21802242192CD36008E0888 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21802232192CD36008E0888 /* ViewController.swift */; };
 		C21802272192CD36008E0888 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C21802252192CD36008E0888 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0ED921602193EA65009F6CAB /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		C218021E2192CD36008E0888 /* TarNumber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TarNumber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C21802212192CD36008E0888 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C21802232192CD36008E0888 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				C21802212192CD36008E0888 /* AppDelegate.swift */,
 				C21802232192CD36008E0888 /* ViewController.swift */,
+				0ED921602193EA65009F6CAB /* RegisterViewController.swift */,
 				C21802252192CD36008E0888 /* Main.storyboard */,
 				C21802282192CD37008E0888 /* Assets.xcassets */,
 				C218022A2192CD37008E0888 /* LaunchScreen.storyboard */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0ED921612193EA65009F6CAB /* RegisterViewController.swift in Sources */,
 				C21802242192CD36008E0888 /* ViewController.swift in Sources */,
 				C21802222192CD36008E0888 /* AppDelegate.swift in Sources */,
 			);
